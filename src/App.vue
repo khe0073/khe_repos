@@ -1,10 +1,9 @@
 <template>
   <div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <v-app id="app">
+      <router-link to="/Grid">Grid1</router-link>
+    <router-view :key="$route.fullPath" />
+</v-app>
   </div>
 </template>
 

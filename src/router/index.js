@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Grid from "../views/Grid.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/Home",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/Grid",
+    name: "Grid",
+    component: Grid,
   },
   {
     path: "/about",
@@ -26,5 +32,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+
+
 
 export default router;
